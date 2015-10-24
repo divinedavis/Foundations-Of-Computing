@@ -28,6 +28,11 @@ class ViewController: UIViewController {
             
             detailOfState.text = "The door is obviously closed if it is locked"
         }
+        
+        if (state.text == "Closed") {
+            
+            detailOfState.text = "It's already closed, why would you want to reclose it?"
+        }
     }
     
     @IBAction func open(sender: AnyObject) {
