@@ -14,28 +14,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailOfState: UILabel!
     @IBOutlet weak var state: UILabel!
     
+    
     @IBAction func close(sender: AnyObject) {
+        
+        detailOfState.text = ""
         
         if (state.text == "Open") || (state.text == "Close the door first") {
             
             state.text = "Closed"
         }
+        
+        if (state.text == "Locked") {
+            
+            detailOfState.text = "The door is obviously closed if it is locked"
+        }
     }
     
     @IBAction func open(sender: AnyObject) {
         
+        detailOfState.text = ""
+
         //If state is locked, you can not open the door
         if (state.text == "Locked") {
             
             //The door stays locked
             state.text = "Locked"
-            detailOfState.text = "You have to unlock this first"
-        }
-        
-        //If the state is locked, you'll have to unlock it first
-        if (state.text == "Locked") {
             
-            state.text = "You have to unlock this first"
+            detailOfState.text = "You have to unlock this first"
         }
         
         if (state.text == "Unlocked") {
@@ -51,9 +56,11 @@ class ViewController: UIViewController {
     
     @IBAction func lock(sender: AnyObject) {
         
+        detailOfState.text = ""
+        
         if (state.text == "Open") {
         
-            state.text = "Close the door first"
+            detailOfState.text = "Close the door first"
         }
         
         if (state.text == "Unlocked") {
@@ -69,11 +76,20 @@ class ViewController: UIViewController {
     
     @IBAction func unlock(sender: AnyObject) {
         
-        if (state.text == "Closed") || (state.text ==
-            
-            "Locked") || (state.text == "You have to unlock this first") {
+        detailOfState.text = ""
         
-                state.text = "Unlocked"
+        if (state.text == "Closed") {
+            
+        }
+        
+        if (state.text == "Locked") {
+            
+            state.text = "Closed"
+        }
+        
+        if (detailOfState.text == "You have to unlock this first") {
+        
+                state.text = "Closed"
         }
     }
     
