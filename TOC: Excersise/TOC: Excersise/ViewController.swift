@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     
     @IBAction func close(sender: AnyObject) {
         
+        var stateText = state.text
+        var stateMessage = detailOfState.text
+        
         detailOfState.text = ""
         
         if (state.text == "Open") {
