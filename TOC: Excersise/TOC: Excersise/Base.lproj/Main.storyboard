@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-LJ-7IE">
                                 <rect key="frame" x="20" y="376" width="64" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
                                 <state key="normal" title="Close"/>
                                 <connections>
                                     <action selector="close:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIN-Pa-ica"/>
@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3X-JR-HmZ">
                                 <rect key="frame" x="100" y="376" width="67" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
                                 <state key="normal" title="Open"/>
                                 <connections>
                                     <action selector="open:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVz-ml-Vdb"/>
@@ -37,7 +37,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAn-1S-a3g">
                                 <rect key="frame" x="184" y="376" width="71" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
                                 <state key="normal" title="Lock"/>
                                 <connections>
                                     <action selector="lock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pza-21-0Ac"/>
@@ -46,7 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmG-LT-NYU">
                                 <rect key="frame" x="268" y="376" width="87" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
                                 <state key="normal" title="Unlock"/>
                                 <connections>
                                     <action selector="unlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFb-UZ-QLi"/>
