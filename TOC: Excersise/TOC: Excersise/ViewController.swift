@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         detailOfState.text = ""
         
-        if (state.text == "Open") || (state.text == "Close the door first") {
+        if (state.text == "Open") {
             
             state.text = "Closed"
         }
@@ -29,10 +29,7 @@ class ViewController: UIViewController {
             detailOfState.text = "The door is obviously closed if it is locked"
         }
         
-        if (state.text == "Closed") {
-            
-            detailOfState.text = "It's already closed, why would you want to reclose it?"
-        }
+        
     }
     
     @IBAction func open(sender: AnyObject) {
