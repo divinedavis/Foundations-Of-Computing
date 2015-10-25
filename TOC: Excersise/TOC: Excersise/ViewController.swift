@@ -10,6 +10,8 @@
 
 Play Unlock The Swag when you touch the unlock button, but only play the part when the kid says "Unlock".
 
+Compare the string that is inputted with the strings that I have as actions.
+
 */
 
 import UIKit
@@ -22,7 +24,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var actionInput: UITextField!
     
+    
     @IBAction func readActionButton(sender: AnyObject) {
+        
+        if ((actionInput.text?.isEmpty) != nil) {
+            
+            detailOfState.text = "You did not enter any text for me to read"
+        }
+        
+        actionInput.resignFirstResponder()
     }
     
     @IBAction func close(sender: AnyObject) {
@@ -89,7 +99,7 @@ class ViewController: UIViewController {
         detailOfState.text = ""
         
         if (state.text == "Closed") {
-           "This door is already locked" 
+           "This door is already locked"
         }
         
         if (state.text == "Locked") {

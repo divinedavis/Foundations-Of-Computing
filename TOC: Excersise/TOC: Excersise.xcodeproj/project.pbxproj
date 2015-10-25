@@ -397,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TOC: Excersise/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "divinedavis.TOC--Excersise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TOC: Excersise/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "divinedavis.TOC--Excersise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +483,7 @@
 				163650BE1BDAA1D2002266E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		163650BF1BDAA1D2002266E6 /* Build configuration list for PBXNativeTarget "TOC: ExcersiseTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +492,7 @@
 				163650C11BDAA1D2002266E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		163650C21BDAA1D2002266E6 /* Build configuration list for PBXNativeTarget "TOC: ExcersiseUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +501,7 @@
 				163650C41BDAA1D2002266E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
