@@ -31,6 +31,8 @@ class ViewController: UIViewController {
             
             detailOfState.text = "You did not enter any text for me to read"
         }
+        
+        actionInput.resignFirstResponder()
     }
     
     @IBAction func close(sender: AnyObject) {
@@ -46,6 +48,8 @@ class ViewController: UIViewController {
             
             detailOfState.text = "The door is obviously closed if it is locked"
         }
+        
+        actionInput.resignFirstResponder()
     }
     
     @IBAction func open(sender: AnyObject) {
@@ -70,6 +74,8 @@ class ViewController: UIViewController {
             
             state.text = "Open"
         }
+        
+        actionInput.resignFirstResponder()
     }
     
     @IBAction func lock(sender: AnyObject) {
@@ -90,6 +96,8 @@ class ViewController: UIViewController {
             
             state.text = "Locked"
         }
+        
+        actionInput.resignFirstResponder()
     }
     
     @IBAction func unlock(sender: AnyObject) {
@@ -109,12 +117,13 @@ class ViewController: UIViewController {
         
                 state.text = "Closed"
         }
+        
+        actionInput.resignFirstResponder()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        actionInput.resignFirstResponder()
         
     }
 
