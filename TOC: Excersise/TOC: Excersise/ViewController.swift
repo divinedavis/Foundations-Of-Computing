@@ -27,8 +27,6 @@ class ViewController: UIViewController {
     
     @IBAction func readActionButton(sender: AnyObject) {
         
-        
-        
         if (actionInput.text == "Close") && (state.text == "Open"){
             
             state.text = "Close"
@@ -144,6 +142,7 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
         self.view.endEditing(true)
     }
     
