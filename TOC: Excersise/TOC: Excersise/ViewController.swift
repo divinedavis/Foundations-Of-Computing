@@ -31,8 +31,6 @@ class ViewController: UIViewController {
             
             detailOfState.text = "You did not enter any text for me to read"
         }
-        
-        actionInput.resignFirstResponder()
     }
     
     @IBAction func close(sender: AnyObject) {
@@ -115,6 +113,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        actionInput.resignFirstResponder()
+        
     }
 
     override func didReceiveMemoryWarning() {
