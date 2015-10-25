@@ -27,13 +27,16 @@ class ViewController: UIViewController {
     
     @IBAction func readActionButton(sender: AnyObject) {
         
-        if ((actionInput.text?.isEmpty) != nil) {
+        
+        
+        if (actionInput.text == "Close") && (state.text == "Open"){
             
-            detailOfState.text = "You did not enter any text for me to read"
+            state.text = "Close"
         }
         
-        if ((actionInput.text?.compare("close")) != nil) {
-            state.text = "hi"
+        if (actionInput.text == "Close") && (state.text == "Locked"){
+            
+            detailOfState.text = "The door is already closed"
         }
         
         actionInput.resignFirstResponder()
