@@ -125,7 +125,8 @@ class ViewController: UIViewController {
         detailOfState.text = ""
         
         if (state.text == "Closed") {
-           "This door is already locked"
+           
+            detailOfState.text = "This door is already unlocked"
         }
         
         if (state.text == "Locked") {
