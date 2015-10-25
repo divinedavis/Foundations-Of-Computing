@@ -121,13 +121,13 @@ class ViewController: UIViewController {
         actionInput.resignFirstResponder()
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-            super.touchesBegan(touches as! Set<UITouch>, withEvent: event)
-            self.view.endEditing(true)
-        }
         
     }
 
