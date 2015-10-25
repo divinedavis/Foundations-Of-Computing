@@ -124,6 +124,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+            super.touchesBegan(touches as! Set<UITouch>, withEvent: event)
+            self.view.endEditing(true)
+        }
         
     }
 
