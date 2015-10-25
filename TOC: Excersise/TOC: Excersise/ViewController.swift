@@ -39,9 +39,19 @@ class ViewController: UIViewController {
             detailOfState.text = "The door is already closed"
         }
         
-        if (actionInput.text == "Open") && (state.text == "Closed") {
+        if (actionInput.text == "Open") || (actionInput.text == "open") && (state.text == "Closed") {
             
             state.text = "Open"
+        }
+        
+        if (actionInput.text?.rangeOfString("Open")) != nil && (actionInput.text == "Closed") {
+            
+            state.text = "Open"
+        }
+        
+        if (actionInput.text == "Lock") || (actionInput.text == "lock") && (state.text == "Closed") {
+            
+            state.text = "Locked"
         }
         
         actionInput.resignFirstResponder()
