@@ -32,6 +32,10 @@ class ViewController: UIViewController {
             detailOfState.text = "You did not enter any text for me to read"
         }
         
+        if ((actionInput.text?.compare("close")) != nil) {
+            state.text = "hi"
+        }
+        
         actionInput.resignFirstResponder()
     }
     
@@ -127,7 +131,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
 
