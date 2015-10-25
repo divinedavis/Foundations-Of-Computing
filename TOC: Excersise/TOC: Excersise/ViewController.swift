@@ -6,6 +6,12 @@
 //  Copyright © 2015 Divine Davis. All rights reserved.
 //
 
+/*
+
+Play Unlock The Swag when you touch the unlock button, but only play the part when the kid says "Unlock".
+
+*/
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -14,11 +20,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailOfState: UILabel!
     @IBOutlet weak var state: UILabel!
     
+    @IBOutlet weak var actionInput: UITextField!
+    
+    @IBAction func readActionButton(sender: AnyObject) {
+    }
     
     @IBAction func close(sender: AnyObject) {
-        
-        var stateText = state.text
-        var stateMessage = detailOfState.text
         
         detailOfState.text = ""
         
@@ -31,8 +38,6 @@ class ViewController: UIViewController {
             
             detailOfState.text = "The door is obviously closed if it is locked"
         }
-        
-        
     }
     
     @IBAction func open(sender: AnyObject) {
@@ -84,7 +89,7 @@ class ViewController: UIViewController {
         detailOfState.text = ""
         
         if (state.text == "Closed") {
-            
+           "This door is already locked" 
         }
         
         if (state.text == "Locked") {
@@ -100,12 +105,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
