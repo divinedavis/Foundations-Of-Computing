@@ -25,21 +25,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var actionInput: UITextField!
     
     
+    
     @IBAction func readActionButton(sender: AnyObject) {
         
-        if (actionInput.text == "Close") && (state.text == "Open"){
+        if (state.text == "Open") && (actionInput.text == "Close") {
             
             state.text = "Close"
         }
         
-        if (actionInput.text == "Close") && (state.text == "Locked"){
+        if (state.text == "Open") && (actionInput.text == "Close") {
             
-            detailOfState.text = "The door is already closed"
+            
         }
         
         if (actionInput.text == "Open") || (actionInput.text == "open") && (state.text == "Closed") {
             
             state.text = "Open"
+        }
+        
+        if (state.text == "Locked") && (actionInput.text == "Open") {
+         
+            state.text = "Locked"
+            
+            detailOfState.text = "You have to unlock this first"
         }
         
         if (actionInput.text?.rangeOfString("Open")) != nil && (actionInput.text == "Closed") {
@@ -142,6 +150,10 @@ class ViewController: UIViewController {
         actionInput.resignFirstResponder()
     }
     
+    func stateChange(state : String, action : String) -> String {
+        
+        return ""
+    }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         self.view.endEditing(true)
