@@ -130,10 +130,17 @@ class ViewController: UIViewController {
     
     @IBAction func unlock(sender: AnyObject) {
         
+        unlockStateChange(actionInput.text!)
+        
+        actionInput.resignFirstResponder()
+    }
+    
+    func unlockStateChange(currentAction : String) -> String {
+        
         detailOfState.text = ""
         
         if (state.text == "Closed") {
-           
+            
             detailOfState.text = "This door is already unlocked"
         }
         
@@ -143,17 +150,14 @@ class ViewController: UIViewController {
         }
         
         if (detailOfState.text == "You have to unlock this first") {
-        
-                state.text = "Closed"
+            
+            state.text = "Closed"
         }
+
         
-        actionInput.resignFirstResponder()
+        return state.text!
     }
     
-    func stateChange(state : String, action : String) -> String {
-        
-        return ""
-    }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         self.view.endEditing(true)
